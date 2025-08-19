@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - AI
+  - Coin
+  - Gate
+  - Key
   layers:
   - Default
   - TransparentFX

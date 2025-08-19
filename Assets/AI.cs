@@ -20,7 +20,7 @@ public class AI : MonoBehaviour
     
     void Update()
     {
-        float playDistance = Vector3.Distance(target.transform.position, transform.position);
+       // float playDistance = Vector3.Distance(target.transform.position, transform.position);
 
        /* if(playDistance <= lookDistance)
         {
@@ -40,4 +40,13 @@ public class AI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookDistance);
     }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.CompareTag("Player"))
+        {
+            col.gameObject.GetComponent<CharacterMovement>().health -= 30.0f;
+        }
+    }
+
 }
