@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookDistance: 20
+  cubePrefab: {fileID: 8235446197927811215, guid: 19f9da62a6f6e314a9099bd808be2b88, type: 3}
 --- !u!136 &656464591946144890
 CapsuleCollider:
   m_ObjectHideFlags: 0
